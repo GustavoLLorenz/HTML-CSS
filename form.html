@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     
 </head>
 <body>
-    <div>Header da pagina</div>
-    <div id="contorno" style="border: 1px solid black;">
-    <label for="inputNomeCompleto"id="label-nomeCOmpleto">Nome:
-        <input type="text" name="nomeCompleto" id="inputNomeCompleto">
-    </label>
-    <br>
-    <label for="emailCandidato">Email: 
-        <input type="email" name="email"id="emailCandidato">
-    </label>
-    <br>
-    <label for="op">Opcão 1
-        <input type="radio" id="opUm" name="op">
-    </label>
+    <form action="" method="get">
+        <div>Header da pagina</div>
+        <div id="contorno" style="border: 1px solid black;">
+        <label for="inputNomeCompleto"id="label-nomeCOmpleto">Nome:
+            <input type="text" name="nomeCompleto" id="inputNomeCompleto">
+        </label>
+        <br>
+        <label for="emailCandidato">Email: 
+            <input type="email" name="email"id="emailCandidato">
+        </label>
+        <br>
+        <label for="opUm">Opcão 1
+            <input type="radio" value="opcaoUMMM" id="op" name="op">
+        </label>
+        
+        <label for="opDois">Opcão 2
+            <input type="radio" id="op" value="opcaoDoisss" name="op">
+        </label>
+        
+        <label for="opcaoTres">Opção 3
+            <input type="radio" id="op" value="opTreeeeeesss" name="op">
+        </label>
+        <br>
+        <div>Espaço para digitar a resposta: </div>
+        <textarea name="espacoResposta" id="formUm" cols="30" rows="10"></textarea>
+        <br>
+        <label for="data">Data:
+            <input type="date" id="data" name="hojee" placeholder="dd/mm/aaaa">
+        </label>
+        <br>
+        <label for="checkBoxUm">Concordo 1
+            <input type="checkbox" name="CONCORDOUMMMM" id="checkBoxUm">
+        </label>
+        <br>
+        <label for="checkBoxDois">Concordo 2
+            <input type="checkbox" name="concordoDOSS" id="checkBoxDois">
+        </label>
+    </div>
     
-    <label for="op">Opcão 2
-        <input type="radio" id="opDois" name="op">
-    </label>
-    
-    <label for="op">Opção 3
-        <input type="radio" id="opcaoTres" name="op">
-    </label>
-    <br>
-    <div>Espaço para digitar a resposta: </div>
-    <textarea name="espacoResposta" id="formUm" cols="30" rows="10"></textarea>
-    <br>
-    <label for="data">Data:
-        <input type="date" id="data" placeholder="dd/mm/aaaa">
-    </label>
-    <br>
-    <label for="checkBoxUm">Concordo 1
-        <input type="checkbox" id="checkBoxUm">
-    </label>
-    <br>
-    <label for="checkBoxDois">Concordo 2
-        <input type="checkbox" id="checkBoxDois">
-    </label>
-</div>
-<button id="enviar">Enviar </button>
-<button id="apagar">Apagar</button>
+    <button type="submit" id="enviar">Enviar </button>
+    <button id="apagar">Apagar</button>
 
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+</form>
 </body>
 </html>
